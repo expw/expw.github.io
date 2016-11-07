@@ -13,14 +13,13 @@
 ################################################################# */
 
 /* Import fonts */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
 body { 
 	background: #fff; 
 	margin: 0; 
 	color: #5a5a5a;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 	font-weight: 300;
