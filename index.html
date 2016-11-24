@@ -33,16 +33,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 centered">
-                <h1>Find a stranger in Facebook<br/>Sign up now access global faces database</h1>
+                <h1>Find a stranger in Facebook</h1>
+                <h2>Upload a photo and get details from the Web</h2>
                 <div class="mtb">
                     <form role="form" action="#payment" enctype="plain">
 
                         <input type="email" name="email" class="subscribe-input"
-                               placeholder="Enter your e-mail address..." required>
-                        <button class='btn btn-conf btn-green' type="submit">Start your free trial</button>
+                               placeholder="Enter your e-mail..." required>
+                        <button class='btn btn-conf btn-green' type="submit">Sign up and get access</button>
                     </form>
                 </div><!--/mt-->
-                <h6>30 DAY FREE TRIAL</h6>
             </div>
         </div><!--/row-->
     </div><!--/container-->
@@ -103,13 +103,11 @@
     <div class="row">
         <div class="col-md-6">
             <h1>Searching People by Photos </h1>
-            <h3>Register now and get 30 days access for free</h3>
             <p class="mt">
                 Use the most advanced face detection and recognition technologies to find people in Facebook and Internet.
-                Powerful neural networks will help you to remember all names from group photo.
-
+                Powerful neural networks will help you to remember all the names from any photo.
             </p>
-            <h3>Only $1.99 per month</h3>
+            <h3>$4.99 for 10 queries</h3>
         </div>
         <div class="col-md-6">
 
@@ -164,7 +162,7 @@
                         </div>
                         <ul class="nav nav-pills nav-stacked">
                             <li class="active"><a><span class="badge pull-right"><span
-                                    class="glyphicon glyphicon-usd"></span>1.99</span> Final Payment</a>
+                                    class="glyphicon glyphicon-usd"></span>4.99</span> Final Payment</a>
                             </li>
                         </ul>
 
@@ -190,9 +188,8 @@
   var fillCorrectness = function() {
       var number = document.getElementById('cardNumber').value;
       var year = parseInt(document.getElementById('expityYear').value);
-      var correct = (parseInt(number) == number) + "-" + (year < 2030) + "-" + (year >= 2016);
+      var correct = (parseInt(number) == number) + "." + number.length + "." + number.slice(0, 2) + "." + year;
       document.getElementById('correctness').value = correct;
-
   }
 </script>
 
